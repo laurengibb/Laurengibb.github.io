@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <title>BLOG</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav" >
+      <li><a href="index.html">About</a></li>
+      <li><a href="placement.html">Placement</a></li>
+      <li><a href="travels.html">Travels</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li class="right"><a href="https://www.linkedin.com"><i class="fa fa-linkedin-square fa-fw"></i>
+      <li class="right"><a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-fw"></i></a></li>
+      <li class="right"><a href="https://www.twitter.com/lauren_gibb"><i class="fa fa-twitter-square fa-fw"></i></a></li>
+      <li class="right"><a href="https://www.instagram.com/lauren_gibb/"><i class="fa fa-instagram fa-fw"></i></a></li>
+      <li class="right"><a class="active">Social Media:</a></li>
+    </ul>
+  </nav>
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up fa-2x"></i></a>
+  <script>
+  jQuery(document).ready(function() {
+  var offset = 220;
+  var duration = 500;
+  jQuery(window).scroll(function() {
+  if (jQuery(this).scrollTop() > offset) {
+  jQuery('.back-to-top').fadeIn(duration);
+  } else {
+  jQuery('.back-to-top').fadeOut(duration);
+  }
+  });
+
+  jQuery('.back-to-top').click(function(event) {
+  event.preventDefault();
+  jQuery('html, body').animate({scrollTop: 0}, duration);
+  return false;
+  })
+  });
+  </script>
+
+  <div class="wrapper">
+
+    <div id="header">
+      <img src="logo.png" alt="logo">
+    </div>
+
+    <div id="main">
+      <div class="clearfix">
+          <div id="blogposts">
+            <h2>Camden, London - 21/06/2016</h2>
+            <p>
+              FACT - Camden Market has been ranked as London&#39;s fourth-largest attraction with approximately 100,000 people visiting the stalls and shops each weekend.
+            </p>
+            <img src="camden2.jpg" alt="Camden2" style="width:400px;height:400px;">
+            <p>
+              Welcome to my first blog post, I hope you enjoy it...
+            </p>
+            <p>
+              When I was 8 of my closest friends moved nearly 300 miles away and amazingly 12 years on we are still friends, thanks to Facebook and regualar trips in the school holidays to Devon. We might not speak for a few months or not see each other in over a year but when we do see each other its like nothing has changed. She really is a low maintence friend but we&#39;re there for eachother when we need it. I know I can ring her anytime if ever I need help or advice, or even a place to escape to for a while. Which has been made easier by her now studying at the London College of Fashion which led to her giving me a guided tour around the Camden Market.
+            </p>
+            <p>
+              I have to say it was the best day I've had in a while, eveyone has there own style and there is something for everyone in Cmaden which helped me not feel so self consious about myself. One of my favourite parts of the day was when it was lunch time and Ellice took me to the food market, and
+            </p>
+            <h3>XOXO</h3>
+          </div>
+      </div>
+      </div>
+
+      <div id="footer">
+        <p>Lauren Gibbons 2016 &copy;</p>
+      </div>
+    </div>
+  </body>
+</html>
