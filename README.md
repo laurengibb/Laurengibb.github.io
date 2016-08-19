@@ -1,2 +1,2 @@
 # Laurengibb.github.io
-Blog on placemnet year
+A personal blog about my year on placement
